@@ -2,15 +2,14 @@ import { FC } from 'react';
 import './Form.scss';
 import FormField from '../FormField/FormField';
 import TextField from '../TextField/TextField';
+import FormHeader from '../FormHeader/FormHeader';
 
 const Form: FC = () => {
   return (
     <>
       <div className="container">
         <form className="form">
-          <h1>Здравствуйте, Человек №3596941</h1>
-          <a href="#test">Сменить статус</a>
-          <div className="status">Прежде чем действовать, надо понять</div>
+          <FormHeader username="Человек №3596941" />
           <FormField label="Ваш город">
             <TextField type="select" />
           </FormField>

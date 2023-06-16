@@ -1,4 +1,5 @@
 import React from 'react';
+import './TextField.scss';
 
 interface ITextField {
   type?: 'text' | 'number' | 'password' | 'email' | 'select';
