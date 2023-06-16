@@ -36,6 +36,13 @@ const Form: FC = () => {
           >
             <TextField type="email" />
           </FormField>
+
+          <FormField
+            label="Я согласен"
+            description="принимать актуальную информацию на емейл"
+          >
+            <TextField type="checkbox" />
+          </FormField>
         </form>
       </div>
     </>

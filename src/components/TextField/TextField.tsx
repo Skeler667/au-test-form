@@ -2,7 +2,7 @@ import React from 'react';
 import './TextField.scss';
 
 interface ITextField {
-  type?: 'text' | 'number' | 'password' | 'email' | 'select';
+  type?: 'text' | 'number' | 'password' | 'email' | 'select' | 'checkbox';
   value?: string | number;
   id?: string;
 }
