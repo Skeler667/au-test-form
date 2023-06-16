@@ -1,7 +1,12 @@
 import { FC } from 'react';
+import Form from '../Form/Form';
 
 const App: FC = () => {
-  return <h1>App</h1>;
+  return (
+    <>
+      <Form />
+    </>
+  );
 };
 
 export default App;
