@@ -3,8 +3,9 @@ import './FormHeader.scss';
 
 interface IFormHeader {
   username: string;
+  status: string;
 }
-const FormHeader: FC<IFormHeader> = ({ username }) => {
+const FormHeader: FC<IFormHeader> = ({ username, status }) => {
   return (
     <div className="form-header">
       <div className="form-header__block">
@@ -14,9 +15,7 @@ const FormHeader: FC<IFormHeader> = ({ username }) => {
         <a href="#test">Сменить статус</a>
       </div>
 
-      <div className="form-header__block status">
-        Прежде чем действовать, надо понять
-      </div>
+      <div className="form-header__block status">{status}</div>
     </div>
   );
 };

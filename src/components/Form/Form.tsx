@@ -1,15 +1,17 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import './Form.scss';
 import FormField from '../FormField/FormField';
 import TextField from '../TextField/TextField';
 import FormHeader from '../FormHeader/FormHeader';
 
 const Form: FC = () => {
+  const [username, setUsername] = useState('Человек №3596941');
+  const [status, setStatus] = useState('Прежде чем действовать, надо понять');
   return (
     <>
       <div className="container">
         <form className="form">
-          <FormHeader username="Человек №3596941" />
+          <FormHeader username={username} status={status} />
           <FormField label="Ваш город">
             <TextField type="select" />
           </FormField>
