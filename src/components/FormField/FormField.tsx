@@ -1,17 +1,12 @@
-import React, { ReactNode } from 'react';
+import React, { Children, PropsWithChildren } from 'react';
 import './FormField.scss';
 
-interface IFormField {
-  label?: string;
-  description?: string;
-  children?: ReactNode;
-}
-const FormField: React.FC<IFormField> = ({ children, label, description }) => {
+const FormField: React.FC<PropsWithChildren> = ({ children }) => {
   return (
     <fieldset>
-      <label htmlFor="">{label}</label>
-      {children}
-      <div className="description">{description}</div>
+      {Children.map(children, (child) => (
+        <div className="Row">{child}</div>
+      ))}
     </fieldset>
   );
 };
