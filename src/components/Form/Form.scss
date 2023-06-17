@@ -2,4 +2,11 @@
     max-width: 1170px;
     margin: 0 auto;
     padding: 90px 100px;
+    background: grey;
+}
+
+@media screen and (max-width:1042px){
+    .container {
+        background: yellowgreen;
+    }
 }
