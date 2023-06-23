@@ -25,10 +25,19 @@ a {
 }
 
 .status {
-    width: 503px;
+    font-size: 18px;
+    height: 50px;
+    width: 34rem;
     padding: 19px 12px 8px;
     color: #404040;
     background-color: #eaeaea;
-    margin-left: 230px;
+    margin-left: 220px;
     margin-top: 11px;
+}
+
+.status::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: 34.66%; bottom: 84.8%; /* Положение треугольника */
+    border: 10px solid transparent; border-bottom: 10px solid #eaeaea;
 }

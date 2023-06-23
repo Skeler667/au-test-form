@@ -13,6 +13,8 @@ const Form: FC = () => {
       <div className="container">
         <form className="form">
           <FormHeader username={username} status={status} />
+
+          <div className='parrentField'>
           <FormField>
             <label>Ваш город</label>
             <TextField type="select" />
@@ -53,6 +55,7 @@ const Form: FC = () => {
             </div>
           </FormField>
           <Button>Изменить</Button>
+          </div>
         </form>
       </div>
     </>

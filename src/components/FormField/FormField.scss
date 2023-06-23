@@ -3,7 +3,15 @@ fieldset {
     align-items: center;
     padding: 10px;
     border: none;
-    margin-top: 47px;
+    margin-top: 30px;
+}
+
+fieldset:nth-child(1) {
+    margin-bottom: 50px;
+}
+
+fieldset:nth-child(3) {
+    margin-bottom: 70px;
 }
 
 label {
